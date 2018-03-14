@@ -92873,7 +92873,13 @@ var render = function() {
             on: { click: _vm.create }
           },
           [
-            _c("i", { staticClass: "fa fa-plus" }),
+            _c("i", {
+              class: {
+                fa: true,
+                "fa-plus": !_vm.isEditMode,
+                "fa-retweet": _vm.isEditMode
+              }
+            }),
             _vm._v(" \n          "),
             _vm.isEditMode
               ? _c("span", [_vm._v("Update")])

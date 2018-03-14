@@ -18,5 +18,8 @@ class UsersAndPostsTableSeeder extends Seeder
                 $u->posts()->save(factory(App\Post::class)->make());
             }
         });
+        factory(App\User::class)->create([
+            'email' => 'imrealashu@gmail.com'
+        ]);
     }
 }

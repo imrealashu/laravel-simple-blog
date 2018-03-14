@@ -38,7 +38,7 @@
                     <ul class="navbar-nav ml-auto">
                         @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/post/create') }}"><i class="fa fa-edit"></i>&nbsp;Create Post</a>
+                            <a dusk="create-post-link" class="nav-link" href="{{ url('/post/create') }}"><i class="fa fa-edit"></i>&nbsp;Create Post</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/posts') }}"><i class="fa fa-copy"></i>&nbsp;My Posts</a>

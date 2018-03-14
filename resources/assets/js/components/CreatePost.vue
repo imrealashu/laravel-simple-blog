@@ -15,7 +15,7 @@
                   <span style="color: #dd3545" v-for="error in errors.description">{{ error }} <br></span>
                 </small>
             </div>
-            <button type="button" @click="create" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;
+            <button type="button" @click="create" class="btn btn-primary"><i :class="{fa: true,  'fa-plus': !isEditMode, 'fa-retweet': isEditMode}"></i>&nbsp;
               <span v-if="isEditMode">Update</span>
               <span v-else>Create</span>
             </button>
